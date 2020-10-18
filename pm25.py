@@ -12,9 +12,11 @@ def purpleair_sms(event, context):
 	#set Twilio account info = to client
 	client = Client(account_sid, auth_token)
 
-	# Purple Air's API is publicly available and you don't need a key!
-	# Make sure to add the ID Number of the sensor you want data from
-	data = requests.get('https://www.purpleair.com/json?key=S5891INKYSJ4NT6W&show=SENSOR NUMBER').json()
+	# Purple Air's API is publicly available so you won't need to register a key.
+	# However you do need the key and ID Number for the sensor you're interested in.
+	# You can get these from Purple Air's map and viewing the JSON file in your browser. 
+	# Copy and paste that url below.
+	data = requests.get('https://www.purpleair.com/json?key=SENSOR_KEY&show=SENSOR NUMBER').json()
 
 	
 	# get 10 minute avg for PM2.5 reading
