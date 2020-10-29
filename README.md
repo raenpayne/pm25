@@ -3,7 +3,7 @@
 Pulls PM2.5 value, 10 minute average, from your nearest PurpleAir sensor. Uses Twilio to send a text message when values change so you know when to open or close the windows.</br></br>
 (Basically, I got tired of checking Purple Air's website every hour, or more often, during the fires to know whether I could finally open the windows or should in fact close them, before the Blade Runner atmosphere tried to infiltrate my sinuses.)
 
-### Google Cloud Platorm - Running PM25 in the Cloud
+### Google Cloud Platform - Running PM25 in the Cloud
 I have this running on Google Cloud Platform as a function and am using pub/sub to trigger the function. Values for the PM2.5 value are stored and read from a file. Cloud Scheduler to runs the function once an hour. When it pulls the new value the function compares it to the old value stored in a file and if the value has moved from green to yellow (or above), or vice versa, you'll receive a text message from your Twilio account letting you know whether to open or close the windows. 
 
 If you do not have a Google Cloud Platform account, it's free to create and currently they offer $300.00 of credit for the first 90 days. So far, after running the function for nearly a month I've incurred $.01 in charges. 
