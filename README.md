@@ -9,11 +9,11 @@ I have this running on Google Cloud Platform as a function and am using pub/sub 
 If you do not have a Google Cloud Platform account, it's free to create and currently they offer $300.00 of credit for the first 90 days. So far, after running the function for nearly a month I've incurred $.01 in charges. 
 
 ### Twilio - Text Feature
-This uses Twilio to send the texts. You'll need to create an account. Trial accounts are free and give you $15.00 of credit, at this time. You'll have to verify any number you want to sent texts to with a trial account, so the phone and its owner will need to be present if you have a friend/housemate/partner who would also like automated texts about the air quality. 
+This uses Twilio to send the texts. You'll need to create an account. Trial accounts are free and give you $15.00 of credit, at this time. You'll have to verify any number you want to send texts to with a trial account, so the phone and its owner will need to be present if you have a friend/housemate/partner who would also like automated texts about the air quality. 
 
 ### Future Updates
 Currently the application will text if the PM2.5 value changes from green to any value at yellow or above, or vice versa. I plan to update it so it will also text if the air quality fluctuates between any range. 
 
 ### PM2.5 Values
-It's possible to convert PM2.5 values with a number of other data points that can be pulled from Purple Air. However, for simplicity this just uses the unconverted PM2.5 reading averaged over 10 minutes. It's not as sophisticated but avoided a lot of maths. :D 
+It's possible to convert PM2.5 values with a number of other data points that can be pulled from Purple Air. However, for simplicity this just uses the unconverted PM2.5 reading averaged over 10 minutes. It's not as sophisticated but avoids a lot of maths. :D 
 
