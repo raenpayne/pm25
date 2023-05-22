@@ -6,7 +6,7 @@ Pulls PM2.5 value, 10 minute average, from your nearest PurpleAir sensor. Uses T
 ### Google Cloud Platform - Running PM25 in the Cloud
 I have this running on Google Cloud Platform as a function and am using pub/sub to trigger the function. Values for the PM2.5 value are stored and read from a file. Cloud Scheduler runs the function once an hour. When it pulls the new value the function compares it to the old value stored in a file and if the value has moved from green to yellow (or above), or vice versa, you'll receive a text message from your Twilio account letting you know whether to open or close the windows. 
 
-If you do not have a Google Cloud Platform account, it's free to create and currently they offer $300.00 of credit for the first 90 days. So far, after running the function for nearly a month I've incurred $.01 in charges. 
+If you do not have a Google Cloud Platform account, it's free to create and currently they offer _$300.00_ of credit for the first 90 days. So far, after running the function for nearly a month I've incurred _$.01_ in charges. 
 
 ### Twilio - Text Feature
 This uses Twilio to send the texts. You'll need to create an account. Trial accounts are free and give you $15.00 of credit, at this time. You'll have to verify any number you want to send texts to with a trial account, so the phone and its owner will need to be present if you have a friend/housemate/partner who would also like automated texts about the air quality. 
